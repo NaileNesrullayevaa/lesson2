@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#stylish{
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),  url(./photo/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#stylish .box-text{
+    text-align: center;
+    padding-top: 20%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#stylish .box-text h1{
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+}
+#stylish .box-text p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+#stylish .box-text a{
+    background-color: #1D809F;
+    text-decoration: none;
+    padding: 20px 25px;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#stylish .box-text a:hover{
+    background-color: #144959;
+}
+#portfolio{
+    padding: 5rem 0;
+}
+#portfolio .box-text{
+    text-align: center;
+}
+#portfolio .box-text h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#portfolio .box-text p{
+    font-size: 14px;
+    font-weight: 700;
+}
+#portfolio .box-text .btn2{
+    background-color: #212529;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    margin-top: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 1s;
+}
+#portfolio .box-text .btn2:hover{
+    background-color: #606366;
+}
+#services{
+    padding: 5rem 0;
+    color: white;
+    background-color: #1D809F;
+}
+#services .box-text{
+    text-align: center;
+    
+}
+#services .box-text span{
+    color:#DFB807;
+}
+#services .boxes{
+    display: flex;
+    padding-top: 30px;
+}
+#services .boxes .box{
+    text-align: center;
+    width: 25%;
+    
+}
+#services .boxes .box span i{
+    padding: 30px;
+    background-color: white;
+    color: #1D809F;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-bottom: 16px;
+    
+}
+
+#services .boxes .box h4{
+    margin-bottom: 8px;
+}
+#website{
+    height: 90vh;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(./photo/bg-callout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#website .box-text{
+    text-align: center;
+    padding-top: 15%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#website h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+#website a{
+    background-color: #1D809F;
+    text-decoration: none;
+    padding: 20px 25px;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#website a:hover{
+    color:#0f576d
+}
+#recent{
+    padding: 30px 0;
+}
+#recent .top-text{
+    text-align: center;
+    padding: 20px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#recent .top-text h6{
+    color: orange;
+}
+#recent .boxes{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#recent .boxes .box{
+    width: 50%;
+    /* border: 1px solid red; */
+    position: relative;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#recent .boxes .box .box-text{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+}
+#recent .boxes .box img{
+    width: 100%;
+    vertical-align: middle;
+}
+#recent .boxes .box:hover{
+    transform: scale(0.9);
+}
+#recent .boxes .box .color-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(45,180,135,0.66);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#recent .boxes .box:hover .color-box{
+    opacity: 1;
+    visibility: visible;
+}
+#recent .boxes .box .box-text{
+    z-index: 5;
+}
+#buttons{
+    background-color: #1D809F;
+    padding: 40px 0;
+    height: 40vh;
+}
+#buttons .box-text{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#buttons h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+#buttons .buttons a{
+    
+    text-decoration: none;
+    padding: 20px 25px;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+
+
+    background-color:white;
+    color:#000;
+    margin-right: 30px;
+}
+#buttons .buttons a:nth-child(2){
+    background-color: #000;
+    color:white;
+}
+#contact .box-text iframe{
+    height: 70vh;
+}
+#footer{
+    padding: 4rem 0;
+}
+#footer .box-text{
+    text-align: center;
+}
+#footer .box-text .icons{
+    display: flex;
+    flex-wrap: wrap;
+     margin-bottom: 20px;
+     justify-content: center;
+     
+}
+#footer .box-text .icons i{
+    padding: 30px;
+    background-color: white;
+    color: #1D809F;
+    border-radius: 50%;
+    font-size: 45px;
+    margin-bottom: 16px;
+}
